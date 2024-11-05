@@ -1,9 +1,19 @@
+name: "FFXIVWaymarkPresets"
+folderurl: "https://raw.githubusercontent.com/Em-Six/FFXIVWaymarkPresets/master/"
 waymarks:
-- name: m2s
-  url: NA/Savage/AAC-Light-heavyweight/m2s.json
-- name: m3s
-  url: NA/Savage/AAC-Light-heavyweight/m3s.json
-- name: m4s
-  url: NA/Savage/AAC-Light-heavyweight/m4s.json
-- name: m1s
-  url: NA/Savage/AAC-Light-heavyweight/m1s.json
+  
+  # ==========
+  # = Savage =
+  # ==========
+
+  - name: M1S
+    url: Dawntrail/AAC-Light-heavyweight/m1s.json
+
+  - name: M2S
+    url: Savage/AAC-Light-heavyweight/m2s.json
+
+  - name: M3S
+    url: Savage/AAC-Light-heavyweight/m3s.json
+
+  - name: M4S
+    url: Savage/AAC-Light-heavyweight/m4s.json
