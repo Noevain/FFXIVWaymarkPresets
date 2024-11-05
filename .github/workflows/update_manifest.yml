@@ -23,7 +23,7 @@ jobs:
 
       - name: Update manifest.yaml with waymarks
         run: |
-          #!/usr/bin/env python3
+          python3 << 'EOF'
           import os
           import yaml
 
@@ -54,6 +54,7 @@ jobs:
           # Write the updated manifest.yaml file
           with open(manifest_path, "w") as f:
               yaml.dump(manifest_data, f, default_flow_style=False)
+          EOF
 
       - name: Commit and push changes
         run: |
