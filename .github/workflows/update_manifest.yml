@@ -1,0 +1,64 @@
+name: Update Manifest
+
+on:
+  push:
+    paths:
+      - '**/*.json'   # Trigger on any .json file changes
+  workflow_dispatch:  # Allow manual trigger for testing
+
+jobs:
+  update_manifest:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.x'
+
+      - name: Install PyYAML
+        run: pip install pyyaml
+
+      - name: Update manifest.yaml with waymarks
+        run: |
+          #!/usr/bin/env python3
+          import os
+          import yaml
+
+          # Path to the manifest file
+          manifest_path = "manifest.yaml"
+
+          # List all .json files in the repository
+          json_files = []
+          for root, dirs, files in os.walk("."):
+              for file in files:
+                  if file.endswith(".json"):
+                      # Relative path and name for each JSON file
+                      json_files.append({
+                          "name": os.path.splitext(file)[0],
+                          "url": os.path.relpath(os.path.join(root, file), ".")
+                      })
+
+          # Load existing manifest.yaml or create a new one
+          if os.path.exists(manifest_path):
+              with open(manifest_path, "r") as f:
+                  manifest_data = yaml.safe_load(f) or {}
+          else:
+              manifest_data = {}
+
+          # Update the waymarks list
+          manifest_data["waymarks"] = json_files
+
+          # Write the updated manifest.yaml file
+          with open(manifest_path, "w") as f:
+              yaml.dump(manifest_data, f, default_flow_style=False)
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.name "github-actions[bot]"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git add manifest.yaml
+          git commit -m "Update waymarks in manifest.yaml"
+          git push
