@@ -1,0 +1,9 @@
+waymarks:
+- name: m2s
+  url: NA/Savage/AAC-Light-heavyweight/m2s.json
+- name: m3s
+  url: NA/Savage/AAC-Light-heavyweight/m3s.json
+- name: m4s
+  url: NA/Savage/AAC-Light-heavyweight/m4s.json
+- name: m1s
+  url: NA/Savage/AAC-Light-heavyweight/m1s.json
