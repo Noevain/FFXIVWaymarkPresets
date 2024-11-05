@@ -1,19 +1,61 @@
-name: "FFXIVWaymarkPresets"
-folderurl: "https://raw.githubusercontent.com/Em-Six/FFXIVWaymarkPresets/master/"
+folderurl: https://raw.githubusercontent.com/Em-Six/FFXIVWaymarkPresets/master/
+name: FFXIVWaymarkPresets
 waymarks:
-  
-  # ==========
-  # = Savage =
-  # ==========
-
-  - name: M1S
-    url: Dawntrail/AAC-Light-heavyweight/m1s.json
-
-  - name: M2S
-    url: Savage/AAC-Light-heavyweight/m2s.json
-
-  - name: M3S
-    url: Savage/AAC-Light-heavyweight/m3s.json
-
-  - name: M4S
-    url: Savage/AAC-Light-heavyweight/m4s.json
+- name: Titangoal
+  url: Ultimate/UWU/Titangoal.json
+- name: NeurolinksABC
+  url: Ultimate/UCOB/NeurolinksABC.json
+- name: Neurolinks
+  url: Ultimate/UCOB/Neurolinks.json
+- name: TriangleABC
+  url: Ultimate/UCOB/TriangleABC.json
+- name: flipped
+  url: Ultimate/UCOB/flipped.json
+- name: P2
+  url: Ultimate/DSR/P2.json
+- name: P1
+  url: Ultimate/DSR/P1.json
+- name: cardinal
+  url: Ultimate/TEA/cardinal.json
+- name: valith
+  url: Ultimate/TEA/valith.json
+- name: Clocks
+  url: Endwalker/Anabaseios/P9S/Clocks.json
+- name: Papan
+  url: Endwalker/Anabaseios/P12S/Papan.json
+- name: Para3
+  url: Endwalker/Anabaseios/P12S/Para3.json
+- name: JP
+  url: Endwalker/Anabaseios/P12S/JP.json
+- name: Neverland
+  url: Endwalker/Anabaseios/P12S/Neverland.json
+- name: hector
+  url: Endwalker/Anabaseios/P10S/hector.json
+- name: JP
+  url: Endwalker/Anabaseios/P10S/JP.json
+- name: Kindred
+  url: Endwalker/Anabaseios/P11S/Kindred.json
+- name: uptime
+  url: Dawntrail/AAC-Light-heavyweight/M4S/uptime.json
+- name: witchunt
+  url: Dawntrail/AAC-Light-heavyweight/M4S/witchunt.json
+- name: Standard
+  url: Dawntrail/AAC-Light-heavyweight/M2S/Standard.json
+- name: uptimedefam
+  url: Dawntrail/AAC-Light-heavyweight/M2S/uptimedefam.json
+- name: outercenterstage
+  url: Dawntrail/AAC-Light-heavyweight/M2S/outercenterstage.json
+- name: hector
+  url: Dawntrail/AAC-Light-heavyweight/M1S/hector.json
+- name: M1S
+  url: Dawntrail/AAC-Light-heavyweight/M1S/M1S.json
+- name: sleepy
+  url: Dawntrail/AAC-Light-heavyweight/M1S/sleepy.json
+- name: colorssleep
+  url: Dawntrail/AAC-Light-heavyweight/M1S/colorssleep.json
+- name: tagteamsafespot
+  url: Dawntrail/AAC-Light-heavyweight/M3S/tagteamsafespot.json
+- name: Standard
+  url: Dawntrail/Extremes/Worqor Lar Dor/Standard.json
+- name: Conga
+  url: Dawntrail/Extremes/Everkeep/Conga.json
